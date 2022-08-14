@@ -10,7 +10,7 @@ class Expense(models.Model):
     date = models.DateTimeField()
     amount = models.BigIntegerField()
     def __str__(self):
-        return "{} ,{}".format(self.amount , self.date)
+        return "price {} ,{}".format(self.amount , self.date)
 class Income(models.Model):
     text=models.CharField(max_length=200)
     date=models.DateTimeField()
